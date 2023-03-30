@@ -1,0 +1,160 @@
+.nav {
+    display: flex;
+
+
+    &--mobile {
+        display: none;
+        margin: 1rem 0;
+    }
+
+    @include breakpoint($tablet-bp) {
+        display: none;
+
+        &--mobile {
+            display: block;
+        }
+    }
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+
+    @include breakpoint($tablet-bp) {
+        flex-direction: column;
+    }
+
+}
+
+.nav__counter {
+    position: absolute;
+    top: 14px;
+    left: 23.5px;
+
+    color: khaki;
+}
+
+.nav__item {
+    position: relative;
+
+    &:hover {
+
+        .nav__link {
+            text-decoration: none;
+            background-color: $background-nav-hover;
+            border-radius: 27px;
+        }
+
+        .nav__link--text-link {
+            border-radius: 27px 27px 0 0;
+        }
+
+        >.subnav {
+            display: block;
+        }
+    }
+
+
+    @include breakpoint($tablet-bp) {
+        &:hover {
+            .nav__link {
+                background: none;
+            }
+        }
+
+    }
+
+
+    &--mobile {
+        position: inherit;
+        display: flex;
+        padding: 10px;
+    }
+
+}
+
+.nav__link {
+    display: block;
+    font-size: 25px;
+    color: $white;
+    text-decoration: none;
+
+    // transition: background-color .2s linear;
+    margin-right: 10px;
+
+
+    &--text-link {
+        line-height: 70px;
+        padding: 0 20px;
+        width: 300px;
+    }
+
+    &.has-subnav {
+        position: relative;
+        padding-right: 3.5rem;
+
+    }
+
+    @include breakpoint($tablet-bp) {
+        padding-left: 0;
+        padding-right: 0;
+
+        font-size: 1.6rem;
+
+        padding: 0;
+    }
+
+    @include breakpoint($mobile-bp) {
+        margin-bottom: -20px;
+
+    }
+}
+
+.nav__link-cart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    @include breakpoint($tablet-bp) {
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 0;
+    }
+}
+
+.nav__link1 {
+    display: flex;
+
+    @include breakpoint($tablet-bp) {
+        width: 70px;
+        height: 60px;
+        margin-left: 15px;
+    }
+}
+
+.nav__link1 img {
+    display: none;
+    width: 35px;
+
+    @include breakpoint($tablet-bp) {
+        display: block;
+    }
+}
+
+.nav__link-mobile {
+    padding: 1rem;
+    text-align: center;
+    line-height: 2;
+    display: block;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: $white;
+    text-decoration: none;
+    transition: background-color .2s linear;
+
+    @include breakpoint($tablet-bp) {
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 1.6rem;
+    }
+}

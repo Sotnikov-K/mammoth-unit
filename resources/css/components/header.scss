@@ -1,0 +1,139 @@
+.header {
+    position: fixed;
+    display: flex;
+    height: 70px;
+    margin: 0px auto 10px;
+    left: 0;
+    right: 0;
+    top: 20px;
+    max-width: $width_nav;
+    background-color: #323232;
+    z-index: 1000;
+    border-radius: 32px;
+}
+
+.logo {
+    width: 70px;
+    margin-right: 25px;
+}
+
+.cart__logo {
+    width: 25px;
+    margin: 0 10px;
+
+    @include breakpoint($tablet-bp) {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+.header__left {
+    // width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    justify-content: left;
+
+    @include breakpoint($tablet-bp) {
+        width: 40%;
+        // height: 60px;
+    }
+
+    @include breakpoint($mobile-bp) {
+        width: 60%;
+        // height: 60px;
+    }
+}
+
+.header__right {
+    // width: 40%;
+    display: flex;
+    margin-left: auto;
+    justify-content: flex-end;
+    align-items: center;
+
+    @include breakpoint($tablet-bp) {
+        width: 60%;
+    }
+
+    @include breakpoint($mobile-bp) {
+        width: 40%;
+        // height: 60px;
+    }
+
+}
+
+.header__right-mobile {
+    display: none;
+
+    @include breakpoint($tablet-bp) {
+        display: flex;
+    }
+}
+
+
+.header__right li {
+    list-style: none;
+}
+
+.header__cart {
+    padding: 0 20px;
+    padding-right: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header__cart-logo {
+    padding: 0 5px;
+    opacity: .9;
+}
+
+.header__cart-p {
+    padding-right: 20px;
+    color: white;
+    opacity: .9;
+
+    @include breakpoint($tablet-bp) {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+.header__cart-quantity-wrapper {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    line-height: 0px;
+    display: flex;
+    justify-content: center;
+    width: 25px;
+
+    border: 1px solid #334449;
+    border-radius: 5px;
+    overflow: hidden;
+
+    background-color: #334449;
+
+    @include breakpoint($tablet-bp) {
+        position: inherit;
+        font-size: 17px;
+        font-weight: 600;
+        color: rgb(32, 32, 32);
+        background-color: rgb(214, 214, 214);
+        padding: 5px 30px;
+        border-radius: 10px;
+    }
+}
+
+.header__cart-quantity {
+    color: white;
+    padding: 10px 0px;
+
+    @include breakpoint($tablet-bp) {
+        font-size: 17px;
+        font-weight: 600;
+        font-style: italic;
+        color: rgb(32, 32, 32);
+    }
+}

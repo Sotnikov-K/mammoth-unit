@@ -1,0 +1,59 @@
+html {
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(34 34 34);
+
+    color: $white;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+p {
+    font-family: 'Play', sans-serif;
+    color: rgb(216, 216, 216);
+}
+
+
+h1 {
+    font-family: 'Play', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 1;
+
+    @include breakpoint($tablet-bp) {
+        font-size: 20px;
+    }
+}
+
+h2 {
+    font-family: 'Play', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 1;
+
+}
+
+.border {
+    width: 40%;
+    border-bottom: 5px solid #1f1f1f;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}

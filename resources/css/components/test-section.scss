@@ -1,0 +1,32 @@
+.test-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
+    margin-bottom: 200px;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+.guest__list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    margin-top: 40px;
+    padding: 10px;
+}
