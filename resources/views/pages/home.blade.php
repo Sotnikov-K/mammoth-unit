@@ -7,42 +7,103 @@
 
 <main class="page">
 
-    <v-input></v-input>
+    {{-- <v-input></v-input> --}}
+    {{-- <v-insertname></v-insertname> --}}
+    {{-- <v-lesson2></v-lesson2> --}}
 
-    <section class="caption">
-        <article class="caption__item caption__item--left">
-            <div class="caption__data">   
-                {{-- <img class="caption__image" src="" loading="lazy" alt="Композиты Раффир"> --}}
-                <div class="caption__title">
-                    <h1 class="caption__title-h1">Композиты Раффир</h1>
-                    <p class="caption__title-p1">Раффир Нобл - Желтая бронза</p>
-                    <p class="caption__title-p2">Нож Станислава Стругунова</p>
-                </div>
-                <a href="#" class="link link--offer">
-                    <p class="link__text">Смотреть</p>
-                    <img class="link__icon" src="">
-                </a>
+
+    <v-lesson3/>
+
+
+    <div class="products__grid">
+
+        <div class="product__item">
+            <img class="product__item-img" src="/images/test/IMG_9536.jpg" alt="">
+
+            <div class="product__text">
+                <p>molar mammoth</p>
+                <p>20x12x23</p>
+                <p>200usd</p>
             </div>
-        </article>
-        <article class="caption__item caption__item--right">
-            <div class="caption__data">
-                {{-- <img class="caption__image" src="" loading="lazy" alt="Информация"> --}}
-                <div class="caption__title">
-                    <h2 class="caption__title-h1">Информация</h2>
-                    <p class="caption__title-p1">по работе с материалом</p>
-                    <p class="caption__title-p2">Обработка, шлифовка, полировка</p>
-                </div>
-                <a href="#" class="link link--offer">
-                    <p class="link__text">Подробнее</p>
-                    <img class="link__icon" src="">
-                </a>
+        </div>
+
+
+
+        <div class="product__item">
+            <img class="product__item-img" src="/images/test/IMG_9537.jpg" alt="">
+
+            <div class="product__text">
+                <p>molar mammoth</p>
+                <p>20x12x23</p>
+                <p>200usd</p>
             </div>
-        </article>
-    </section>
+        </div>
+        <div class="product__item">
+            <img class="product__item-img" src="/images/test/IMG_9538.jpg" alt="">
 
-    <v-insertname></v-insertname>
+            <div class="product__text">
+                <p>molar mammoth</p>
+                <p>20x12x23</p>
+                <p>200usd</p>
+            </div>
+        </div>
+        <div class="product__item">
+            <img class="product__item-img" src="/images/test/IMG_9539.jpg" alt="">
 
-    
+            <div class="product__text">
+                <p>molar mammoth</p>
+                <p>20x12x23</p>
+                <p>200usd</p>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="product__item">
+            <img class="product__item-img" src="/images/test/IMG_9536.jpg" alt="">
+
+            <div class="product__text">
+                <p>molar mammoth</p>
+                <p>20x12x23</p>
+                <p>200usd</p>
+            </div>
+        </div>
+
+
+
+        <div class="product__item">
+            <img class="product__item-img" src="/images/test/IMG_9540.jpg" alt="">
+
+            <div class="product__text">
+                <p>molar mammoth</p>
+                <p>20x12x23</p>
+                <p>200usd</p>
+            </div>
+        </div>
+        <div class="product__item">
+            <img class="product__item-img" src="/images/test/IMG_9544.jpg" alt="">
+
+            <div class="product__text">
+                <p>molar mammoth</p>
+                <p>20x12x23</p>
+                <p>200usd</p>
+            </div>
+        </div>
+        <div class="product__item">
+            <img class="product__item-img" src="/images/test/IMG_9542.jpg" alt="">
+
+            <div class="product__text">
+                <p>molar mammoth</p>
+                <p>20x12x23</p>
+                <p>200usd</p>
+            </div>
+        </div>
+
+    </div>
 
 
 </main>

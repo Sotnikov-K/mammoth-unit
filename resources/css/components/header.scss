@@ -1,14 +1,16 @@
 .header {
     position: fixed;
     display: flex;
+    width: 95%;
     height: 70px;
     margin: 0px auto 10px;
     left: 0;
     right: 0;
-    top: 20px;
+    top: 10px;
     max-width: $width_nav;
     background-color: #323232;
     z-index: 1000;
+    box-shadow: 0 6px 8px rgb(0 0 0 / 20%);
     border-radius: 32px;
 }
 

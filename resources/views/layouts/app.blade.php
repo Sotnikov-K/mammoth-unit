@@ -13,16 +13,15 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
         
-        
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
         {{-- @vite(['resources/css/app.scss', 'resources/js/app.js']) --}}
         @vite('resources/css/app.scss')
-
+        @vite('resources/js/app.js')
     </head>
 
     <body class="body" id="app">
 
-      
         <v-header></v-header>
 
         {{-- @include('components/overlay') --}}
@@ -36,7 +35,6 @@
 
         
 
-
-        @vite('resources/js/app.js')
+        <v-footer></v-footer>
     </body>
 </html>

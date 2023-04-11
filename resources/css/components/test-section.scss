@@ -30,3 +30,72 @@ button {
     margin-top: 40px;
     padding: 10px;
 }
+
+
+
+.products__grid {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 1%;
+}
+
+.product__item {
+    display: flex;
+    flex-direction: column;
+    width: 32.666%;
+    overflow: hidden;
+    border-radius: 27px;
+}
+
+.product__item-img {
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 27px 27px 27px 0px;
+}
+
+
+
+
+// Lesson 2 styles
+.content {
+    height: 300px;
+    overflow: auto;
+}
+
+.wrapper {
+    padding: 15px;
+    max-width: 900px;
+    margin-bottom: 300px;
+}
+
+.form-div {
+    margin-top: 100px;
+}
+
+tr {
+    padding: 20px;
+}
+
+td {
+    padding: 20px;
+    border: 1px solid white;
+}
+
+.bar {
+    background-color: azure;
+}
+
+.bar-yes {
+    background-color: rgb(16, 78, 58);
+}
+
+.bar-no {
+    background-color: rgb(201, 0, 0);
+}
+
+
+.ul {
+    padding: 10px;
+    border: 1px solid rgb(255, 0, 0);
+}

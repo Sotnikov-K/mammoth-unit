@@ -1,7 +1,6 @@
 .nav {
     display: flex;
 
-
     &--mobile {
         display: none;
         margin: 1rem 0;
@@ -19,6 +18,7 @@
 .nav__list {
     display: flex;
     align-items: center;
+
 
     @include breakpoint($tablet-bp) {
         flex-direction: column;
@@ -42,15 +42,18 @@
         .nav__link {
             text-decoration: none;
             background-color: $background-nav-hover;
+            transition: background-color .2s linear;
             border-radius: 27px;
         }
 
         .nav__link--text-link {
             border-radius: 27px 27px 0 0;
+
         }
 
         >.subnav {
             display: block;
+            transition: all .2s linear;
         }
     }
 
@@ -70,7 +73,6 @@
         display: flex;
         padding: 10px;
     }
-
 }
 
 .nav__link {
@@ -78,35 +80,40 @@
     font-size: 25px;
     color: $white;
     text-decoration: none;
-
-    // transition: background-color .2s linear;
-    margin-right: 10px;
-
+    border-radius: 27px;
+    transition: background-color .2s linear;
 
     &--text-link {
         line-height: 70px;
         padding: 0 20px;
-        width: 300px;
+        // width: 300px;
+        border-radius: 27px 27px 0 0;
+    }
+
+    &--text-link-round {
+        line-height: 70px;
+        padding: 0 20px;
+        border-radius: 27px;
+    }
+
+
+    &--shoppingcart{
+        padding: 0 40px;
     }
 
     &.has-subnav {
         position: relative;
-        padding-right: 3.5rem;
-
     }
 
     @include breakpoint($tablet-bp) {
         padding-left: 0;
         padding-right: 0;
-
         font-size: 1.6rem;
-
         padding: 0;
     }
 
     @include breakpoint($mobile-bp) {
         margin-bottom: -20px;
-
     }
 }
 
